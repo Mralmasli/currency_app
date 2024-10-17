@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/exchange_nav_graph"
+    app:startDestination="@id/exchangeFragment2">
+
+    <fragment
+        android:id="@+id/exchangeFragment"
+        android:name="com.azercell.exchange.ExchangeFragment"
+        android:label="ExchangeFragment" >
+        <action
+            android:id="@+id/to_selectCurrencyFragment"
+            app:destination="@id/selectCurrencyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectCurrencyFragment"
+        android:name="com.azercell.exchange.SelectCurrencyFragment"
+        android:label="SelectCurrencyFragment" >
+        <argument
+            android:name="currencyList"
+            app:argType="string[]" />
+        <argument
+            android:name="isPrimary"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/exchangeFragment2"
+        android:name="com.azercell.exchange.view.ExchangeFragment"
+        android:label="ExchangeFragment" >
+        <action
+            android:id="@+id/action_exchangeFragment_to_selectCurrencyFragment"
+            app:destination="@id/selectCurrencyFragment" />
+    </fragment>
+</navigation>

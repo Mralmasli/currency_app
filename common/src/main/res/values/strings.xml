@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Currency App</string>
+    <string name="exchange">Exchange</string>
+    <string name="rate_guard">Rate Guard</string>
+    <string name="swap">Swap</string>
+    <string name="save">Save</string>
+    <string name="selectCurrency">Select Currency</string>
+    <string name="currentAmount">Current Amount</string>
+    <string name="amount">Amount</string>
+    <string name="hintAmount">Enter Amount</string>
+    <string name="threshold">Threshold</string>
+</resources>
